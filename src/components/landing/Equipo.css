@@ -1,0 +1,125 @@
+.landing-team {
+  scroll-margin-top: 90px;
+  padding: clamp(4.5rem, 8vw, 7.5rem) 1.5rem;
+  background: #f2f8fe;
+  color: #1e293f;
+  font-family: Nunito, system-ui, sans-serif;
+}
+
+.landing-team .team-inner {
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.landing-team .team-heading {
+  max-width: 700px;
+  margin: 0 auto clamp(2.5rem, 5vw, 3.25rem);
+  text-align: center;
+}
+
+.landing-team .team-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  color: #0062cc;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.landing-team .team-eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #ef7500;
+}
+
+.landing-team .team-heading h2 {
+  max-width: 600px;
+  margin: 0 auto 1rem;
+  color: #1e293f;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.landing-team .team-heading > p:last-child {
+  margin: 0;
+  color: #435776;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.landing-team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.landing-team .team-card {
+  overflow: hidden;
+  border: 1px solid #cbdcf0;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.landing-team .team-photo-placeholder {
+  position: relative;
+  display: grid;
+  aspect-ratio: 1.6;
+  place-items: center;
+  background: #e3f2ff;
+}
+
+.landing-team .team-placeholder-icon {
+  color: #4a9ce8;
+}
+
+.landing-team .team-photo-label {
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.85rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #0062cc;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.landing-team .team-card-content {
+  padding: 1.1rem 1.25rem 1.25rem;
+}
+
+.landing-team .team-card h3 {
+  margin: 0 0 0.35rem;
+  color: #17243a;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.landing-team .team-card-content p {
+  margin: 0;
+  color: #435776;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 850px) {
+  .landing-team .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .landing-team {
+    padding-inline: 1rem;
+  }
+
+  .landing-team .team-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

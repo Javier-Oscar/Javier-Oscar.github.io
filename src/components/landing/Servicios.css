@@ -1,0 +1,128 @@
+.landing-services {
+  scroll-margin-top: 90px;
+  padding: clamp(4.5rem, 8vw, 7.5rem) 1.5rem;
+  background: #f2f8fe;
+  color: #1e293f;
+  font-family: Nunito, system-ui, sans-serif;
+}
+
+.landing-services .services-inner {
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.landing-services .services-heading {
+  max-width: 660px;
+  margin: 0 auto clamp(2.5rem, 5vw, 3.5rem);
+  text-align: center;
+}
+
+.landing-services .services-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  color: #0062cc;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.landing-services .services-eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #ef7500;
+}
+
+.landing-services h2 {
+  margin: 0 auto 1.1rem;
+  color: #1e293f;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.landing-services .services-intro {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #435776;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.landing-services .services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.landing-services .service-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid #cbdcf0;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.landing-services .service-icon {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  border-radius: 0.85rem;
+  background: #e3f2ff;
+  color: #0062cc;
+}
+
+.landing-services .service-card h3 {
+  margin: 1.25rem 0 0.65rem;
+  color: #17243a;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.landing-services .service-description {
+  flex: 1;
+  margin: 0;
+  color: #435776;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.landing-services .service-divider {
+  height: 1px;
+  margin: 1.25rem 0 0.9rem;
+  background: #cbdcf0;
+}
+
+.landing-services .service-detail {
+  margin: 0;
+  color: #0062cc;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .landing-services .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .landing-services {
+    padding-inline: 1rem;
+  }
+
+  .landing-services .services-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .landing-services .service-card {
+    padding: 1.25rem;
+  }
+}

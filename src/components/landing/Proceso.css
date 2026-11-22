@@ -1,0 +1,197 @@
+.landing-process {
+  scroll-margin-top: 90px;
+  padding: clamp(4rem, 7vw, 6.5rem) 1.5rem clamp(5rem, 8vw, 7rem);
+  background: #fff;
+  color: #1e293f;
+  font-family: Nunito, system-ui, sans-serif;
+}
+
+.landing-process .process-inner {
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.landing-process .process-heading {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.landing-process .process-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  color: #0062cc;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.landing-process .process-eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #ef7500;
+}
+
+.landing-process .process-heading h2 {
+  margin: 0 0 1rem;
+  color: #1e293f;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.landing-process .process-heading > p:last-child {
+  margin: 0;
+  color: #435776;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.landing-process .process-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.landing-process .process-grid::before {
+  position: absolute;
+  top: 27px;
+  right: 8%;
+  left: 8%;
+  border-top: 1px dashed #1681e8;
+  content: "";
+}
+
+.landing-process .process-step {
+  position: relative;
+  z-index: 1;
+}
+
+.landing-process .process-number {
+  display: grid;
+  width: 54px;
+  height: 54px;
+  place-items: center;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: #e3f2ff;
+  color: #0062cc;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.landing-process .process-step h3 {
+  margin: 0 0 0.45rem;
+  color: #17243a;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.landing-process .process-step p {
+  max-width: 260px;
+  margin: 0;
+  color: #435776;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.privacy-banner {
+  padding: clamp(2.5rem, 5vw, 4rem) 1.5rem;
+  background: #0868c9;
+  color: #fff;
+  font-family: Nunito, system-ui, sans-serif;
+}
+
+.privacy-banner .privacy-inner {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem;
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.privacy-banner .privacy-icon {
+  display: grid;
+  width: 80px;
+  height: 80px;
+  place-items: center;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.privacy-banner h2 {
+  margin: 0 0 0.55rem;
+  color: #fff;
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.privacy-banner p {
+  max-width: 850px;
+  margin: 0;
+  color: #fff;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 760px) {
+  .landing-process .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1.5rem;
+  }
+
+  .landing-process .process-grid::before {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .landing-process {
+    padding-inline: 1rem;
+  }
+
+  .landing-process .process-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .landing-process .process-step {
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr);
+    column-gap: 0.9rem;
+  }
+
+  .landing-process .process-number {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+
+  .landing-process .process-step h3 {
+    align-self: end;
+  }
+
+  .landing-process .process-step p {
+    max-width: none;
+  }
+
+  .privacy-banner .privacy-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .privacy-banner .privacy-icon {
+    width: 64px;
+    height: 64px;
+  }
+}

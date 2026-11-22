@@ -1,0 +1,166 @@
+.landing-training {
+  scroll-margin-top: 90px;
+  padding: clamp(4.5rem, 8vw, 7.5rem) 1.5rem;
+  background: #fff;
+  color: #1e293f;
+  font-family: Nunito, system-ui, sans-serif;
+}
+
+.landing-training .training-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(3rem, 6vw, 5rem);
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.landing-training .training-card {
+  position: relative;
+  display: flex;
+  min-height: 410px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  background: #e3f2ff;
+}
+
+.landing-training .training-card-icon {
+  z-index: 1;
+  color: #0062cc;
+}
+
+.landing-training .training-card > p {
+  z-index: 1;
+  max-width: 390px;
+  margin: 2rem 0 0;
+  color: #1e293f;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.landing-training .training-card-ring {
+  position: absolute;
+  right: -75px;
+  bottom: -130px;
+  width: 250px;
+  height: 250px;
+  border: 44px solid #83d1ef;
+  border-radius: 50%;
+}
+
+.landing-training .training-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1rem;
+  color: #0062cc;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.landing-training .training-eyebrow::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #ef7500;
+}
+
+.landing-training h2 {
+  margin: 0 0 1rem;
+  color: #1e293f;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.landing-training .training-intro {
+  margin: 0 0 1.75rem;
+  color: #435776;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.landing-training .training-options {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.landing-training .training-option {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: start;
+  gap: 0.9rem;
+}
+
+.landing-training .training-option-icon {
+  margin-top: 0.1rem;
+  color: #0062cc;
+}
+
+.landing-training .training-option h3 {
+  margin: 0 0 0.35rem;
+  color: #17243a;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.landing-training .training-option p {
+  margin: 0;
+  color: #435776;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.landing-training .training-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 1.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid #cbdcf0;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgb(20 60 100 / 8%);
+  color: #0062cc;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.landing-training .training-link:hover {
+  background: #f3f9ff;
+}
+
+.landing-training .training-link:focus-visible {
+  outline: 3px solid #0062cc;
+  outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  .landing-training .training-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .landing-training .training-card {
+    min-height: 340px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-training {
+    padding-inline: 1rem;
+  }
+
+  .landing-training .training-card {
+    min-height: 300px;
+    padding: 1.75rem;
+  }
+}

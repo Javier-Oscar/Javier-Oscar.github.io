@@ -1,0 +1,129 @@
+.landing-about {
+  scroll-margin-top: 90px;
+  padding: clamp(3rem, 7vw, 7rem) 1.5rem;
+  background: #fff;
+  color: #1e293f;
+  font-family: Nunito, system-ui, sans-serif;
+}
+
+.landing-about .about-inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5rem);
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+.landing-about p {
+  margin: 0 0 1.15rem;
+  color: #435776;
+  line-height: 1.7;
+}
+
+.landing-about .about-label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #0062cc;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.landing-about .about-label::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #ef7500;
+}
+
+.landing-about h2 {
+  margin: 0 0 1.2rem;
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.landing-about .about-values {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 2.2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.landing-about .about-values li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.landing-about .about-check {
+  display: grid;
+  flex: 0 0 17px;
+  height: 17px;
+  place-items: center;
+  margin-top: 0.15rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: #b95300;
+  font-size: 0.72rem;
+}
+
+.landing-about small {
+  display: block;
+  margin-top: 0.35rem;
+  color: #435776;
+}
+
+.landing-about .about-card {
+  display: grid;
+  justify-items: center;
+  margin: 0;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  padding-top: clamp(2rem, 5vw, 4rem);
+  border-radius: 1.5rem;
+  background: #e1f1ff;
+}
+
+.landing-about .about-art {
+  display: grid;
+  place-items: center;
+  width: min(100%, 310px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e9f7ff 55%, #91d7f2 56%);
+}
+
+.landing-about img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.landing-about figcaption {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  background: #fff;
+  color: #0062cc;
+  text-align: center;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .landing-about .about-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .landing-about .about-values {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

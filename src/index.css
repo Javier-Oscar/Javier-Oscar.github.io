@@ -1,0 +1,6 @@
+:root{--blue:#0069D1;--navy:#1E293B;--bg:#F3F8FF;--tint:#E0F0FE;--orange:#E87500;--border:#D3E3F3;--muted:#566377}
+*{box-sizing:border-box}body{margin:0;font-family:'Nunito',sans-serif;color:var(--navy);background:var(--bg)}
+
+html {
+  scroll-behavior: smooth;
+}
